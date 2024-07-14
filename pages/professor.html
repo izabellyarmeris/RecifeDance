@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecifeDance | Cadastro de Alunos</title>
+    <link rel="stylesheet" href="../css/stylesAluno.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="area_comum">
+    <header>
+      <img src="../imagens/logo_recifeDance.png" alt="logo do recifedance" />
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Sobre</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="parques.html">Locais</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <img src="../imagens/icone_dance.png" alt="boneco">
+    	<div class="container">
+            <h1 class="titulo_esquerda"><i><span class="la_bamba">Para bailar la bamba...</span></i></h1>
+            <h1 class="titulo_direita"><i><span class="la_bamba">Se necessita un </span>cadastro!</i></h1>
+            <br><br><br>
+            <h3>Professores</h3>
+            <br>
+            <form action="/submit_form" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="nasc">Data de Nascimento:</label><br>
+                <input type="date" id="nasc" name="nasc" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="tel">Celular:</label><br>
+                <input type="number" id="tel" name="tel" required><br><br>
+                
+                <label for="mensagem">Qual motivo te fez vir para RecifeDance?</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+                
+                <label for="parque">Em qual parque deseja ministrar sua aula?</label><br>
+                <input type="text" id="parque" name="parque" required><br><br>
+
+                <label for="data_aula">Em qual data?</label><br>
+                <input type="date" id="data_aula" name="data_aula" required><br><br>
+
+                <label for="hora_aula">Em qual horario?</label><br>
+                <input type="time" id="hora_aula" name="hora_aula" required><br><br>
+                <br><br>
+
+                <input class="botao_submit" type="submit" value="Enviar">
+            </form>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <h3>Contatos</h3>
+
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Recife_Dance_j</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+            <p>Recife_Dance_2024</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+    <script
+      src="https://kit.fontawesome.com/9b1a63a6b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

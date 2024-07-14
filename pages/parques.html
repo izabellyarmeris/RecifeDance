@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parques - RecifeDance</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background-image: url(../imagens/parque-bg.png);
+        background-size: cover;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        height: 100%;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      main > img {
+        position: absolute;
+        left: 0;
+        top: 150vh;
+        width: 300px;
+        height: 300px;
+      }
+
+      .card-container {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        gap: 2rem;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        border: 1px solid #9cff1e;
+        border-radius: 10px;
+        align-items: center;
+        box-shadow: 2px 0px 19px 0px rgba(156, 255, 30, 1);
+      }
+
+      .card img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .card a {
+        background-color: #9cff1e;
+        color: #000;
+        font-size: 14px;
+        padding: 10px 1rem;
+        border-radius: 5px;
+        box-shadow: 2px 0px 19px 0px rgba(156, 255, 30, 1);
+      }
+
+      .card a:hover {
+        opacity: 0.8;
+      }
+
+      .map {
+        border: 8px solid #9cff1e;
+        height: 316px;
+      }
+
+      footer {
+        background-color: #000;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="../imagens/logo_recifeDance.png" alt="logo do recifedance" />
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Sobre</a></li>
+          <li><a href="./cadastro.html">Cadastro</a></li>
+          <li><a href="./parques.html">Locais</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Tu não conhece os principais parques da tua cidade?</h2>
+
+      <h1>Vem descobrir o mais pertinho de você!</h1>
+
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://vaipraruamenino.wordpress.com/wp-content/uploads/2012/07/capa3.jpg"
+            alt=""
+          />
+          <h3>Parque da Jaqueira</h3>
+          <p>R. do Futuro</p>
+          <a href="https://maps.app.goo.gl/8nXMZAezSTL99nzB9" target="_blank"
+            >Ver no Maps</a
+          >
+        </div>
+
+        <div class="card">
+          <img
+            src="https://visit.recife.br/wp-content/uploads/2017/10/o-que-fazer-parque-dona-lindu-05.jpg"
+            alt=""
+          />
+          <h3>Parque Dona Lindu</h3>
+          <p>Av. Boa Viagem</p>
+          <a href="https://maps.app.goo.gl/ZuUEhGP4z7frP2aZA" target="_blank"
+            >Ver no Maps</a
+          >
+        </div>
+
+        <div class="card">
+          <img
+            src="https://visit.recife.br/wp-content/uploads/2018/04/o-que-fazer-13-de-maio-destaque.jpg"
+            alt=""
+          />
+          <h3>Parque 13 de Maio</h3>
+          <p>R. Mamede Simões</p>
+          <a href="https://maps.app.goo.gl/bZwm5DzkXLkeMGox7" target="_blank"
+            >Ver no Maps</a
+          >
+        </div>
+
+        <div class="card">
+          <img
+            src="https://visit.recife.br/wp-content/uploads/2017/10/o-que-fazer-parque-santana-01.jpg"
+            alt=""
+          />
+          <h3>Parque Santana</h3>
+          <p>R. Jorge Gomes de Sá</p>
+          <a href="https://maps.app.goo.gl/hX9Wzaf3r78MA1AZ9">Ver no Maps</a>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://www2.recife.pe.gov.br/sites/default/files/styles/imagem_slide_home/public/img-20240705-wa0333.jpg?itok=inSrB2aH"
+            alt=""
+          />
+          <h3>Parque da Tamarineira</h3>
+          <p>Tamarineira</p>
+          <a href="https://maps.app.goo.gl/A4gx15DMFJy2fMSf7" target="_blank"
+            >Ver no Maps</a
+          >
+        </div>
+
+        <div class="card">
+          <img
+            src="https://visit.recife.br/wp-content/uploads/2017/10/o-que-fazer-parque-urbano-da-macaxeira-03.jpg"
+            alt=""
+          />
+          <h3>Parque da Macaxeira</h3>
+          <p>Av. Norte</p>
+          <a href="https://maps.app.goo.gl/RHNiWQuC68KTuPHh7" target="_blank"
+            >Ver no Maps</a
+          >
+        </div>
+      </div>
+
+      <h2>Você também pode encontrar outros no mapa!</h2>
+
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.623709347886!2d-34.90339757263356!3d-8.037674625621744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18ff84b1ad69%3A0xba959d4f90080b74!2sParque%20da%20Jaqueira!5e0!3m2!1spt-BR!2sbr!4v1720895474826!5m2!1spt-BR!2sbr"
+          width="800"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <img src="../imagens/icone_dance.png" alt="" />
+    </main>
+
+    <footer id="contato">
+      <h3>Contatos</h3>
+
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Recife_Dance_j</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+            <p>Recife_Dance_2024</p>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/9b1a63a6b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
